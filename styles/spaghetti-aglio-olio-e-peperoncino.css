@@ -77,15 +77,6 @@ article ol li p {
     pointer-events: none;
 }
 
-.hero figure img {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    filter: brightness(0.5);
-    transform: translate(-50%, -50%) scaleX(-1);
-}
 
 .hero h1 {
     width: 36%;
@@ -101,6 +92,42 @@ article ol li p {
     font-size: 1.2rem;
 }
 
+/* Comment Section */
+.comment {
+    max-width: 60%;
+    padding: 1rem;
+}
+
+.comment-user-info p {
+    margin: 0 0 0 1.5rem;
+}
+
+.comment p:last-child {
+    width: 100%;
+}
+
+.comment img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.comment-user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero figure img {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    filter: brightness(0.5);
+    transform: translate(-50%, -50%) scaleX(-1);
+}
+
 /* header */
 h2 {
     width: 100%;
@@ -112,9 +139,9 @@ h2 {
 
 h2 .highlighted {
     padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
     margin: 0 0.5rem;
     background-color: var(--accent-lighter);
-    border-radius: 1rem;
     font-weight: var(--font-weight-bold);
 }
 
@@ -203,6 +230,14 @@ form input {
     gap: 2rem;
 }
 
+form button {
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 0;
+    background: #d9d9d9;
+    outline: none;
+}
+
 .form-container button:last-child{
     background-color: var(--accent-lighter);
 }
@@ -229,14 +264,6 @@ form input[type="checkbox"] {
     margin-right: 2rem;
 }
 
-form button {
-    padding: 1rem 4rem;
-    border: none;
-    background: #d9d9d9;
-    border-radius: 0;
-    outline: none;
-}
-
 .invalid {
     border: 2px solid red;
 }
@@ -250,32 +277,3 @@ form button {
     text-decoration: underline;
     text-underline-offset: 0.4rem;
 }
-
-/** Comment Section
-*********************************************************************************************************************************************/
-
-.comment {
-    padding: 1rem;
-    max-width: 60%;
-}
-
-.comment p:last-child {
-    width: 100%;
-}
-
-.comment img {
-    height: 3rem;
-    width: 3rem;
-}
-
-.comment-user-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.comment-user-info p {
-    margin: 0 0 0 1.5rem;
-}
-

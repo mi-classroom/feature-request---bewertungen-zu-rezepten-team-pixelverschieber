@@ -6,7 +6,8 @@ function updateQuantity() {
     let value = selector.value;
 
     quantities.forEach(quantity => {
-        let data = (quantity.getAttribute('data-quantity') * value).toFixed(2);
+        let number = quantity.getAttribute('data-quantity') * value;
+        let data = (number % 1) ? number.toFixed(2) : number.toFixed(0);
         let unit = quantity.getAttribute('data-unit');
 
         if(unit != null) data += unit;
