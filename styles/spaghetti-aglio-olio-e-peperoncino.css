@@ -203,6 +203,10 @@ form input {
     gap: 2rem;
 }
 
+.form-container button:last-child{
+    background-color: var(--accent-lighter);
+}
+
 .form-container .input-container {
     display: flex;
     flex-direction: column;
@@ -246,3 +250,32 @@ form button {
     text-decoration: underline;
     text-underline-offset: 0.4rem;
 }
+
+/** Comment Section
+*********************************************************************************************************************************************/
+
+.comment {
+    padding: 1rem;
+    max-width: 60%;
+}
+
+.comment p:last-child {
+    width: 100%;
+}
+
+.comment img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.comment-user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment-user-info p {
+    margin: 0 0 0 1.5rem;
+}
+
