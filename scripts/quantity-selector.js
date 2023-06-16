@@ -10,7 +10,7 @@ function updateQuantity() {
         let data = (number % 1) ? number.toFixed(2) : number.toFixed(0);
         let unit = quantity.getAttribute('data-unit');
 
-        if(unit != null) data += unit;
+        if (unit != null) data += unit;
 
         quantity.textContent = data;
     });

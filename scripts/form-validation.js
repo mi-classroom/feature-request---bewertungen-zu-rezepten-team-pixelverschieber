@@ -44,26 +44,33 @@ document.addEventListener('DOMContentLoaded', function () {
     checkboxLabel.classList.remove('invalid-label');
   });
 
-    
+
 });
 
 function addComment(name, comment) {
+
+  //creating elements
   const div = document.createElement('div');
   const divuserinfo = document.createElement('div');
   const img = document.createElement('img');
   const pusername = document.createElement('p');
   const pcomment = document.createElement('p');
 
+  //adding content to elements
   img.src = '../images/user.png';
   img.alt = 'Logo';
   pusername.textContent = name;
   pcomment.textContent = comment;
-  divuserinfo.classList.add('comment-user-info');
+
+  //adding elements to div
   divuserinfo.appendChild(img);
   divuserinfo.appendChild(pusername);
   div.appendChild(divuserinfo);
   div.appendChild(pcomment);
+
+  //adding classes to elements
+  divuserinfo.classList.add('comment-user-info');
   div.classList.add('comment');
-  
+
   document.querySelector(".comments").appendChild(div);
 }
