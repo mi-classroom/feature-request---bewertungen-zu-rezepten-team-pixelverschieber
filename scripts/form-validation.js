@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Check if all inputs are valid and the checkbox is checked
     if (isValid && checkbox.checked) {
-      form.submit();
+      addComment(inputs[0].value, inputs[2].value);
+      // form.submit();
     }
   });
 
@@ -42,4 +43,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
     checkboxLabel.classList.remove('invalid-label');
   });
+
+    
 });
+
+function addComment(name, comment) {
+  const div = document.createElement('div');
+  const divuserinfo = document.createElement('div');
+  const img = document.createElement('img');
+  const pusername = document.createElement('p');
+  const pcomment = document.createElement('p');
+
+  img.src = '../images/user.png';
+  img.alt = 'Logo';
+  pusername.textContent = name;
+  pcomment.textContent = comment;
+  divuserinfo.classList.add('comment-user-info');
+  divuserinfo.appendChild(img);
+  divuserinfo.appendChild(pusername);
+  div.appendChild(divuserinfo);
+  div.appendChild(pcomment);
+  div.classList.add('comment');
+  
+  document.querySelector(".comments").appendChild(div);
+}

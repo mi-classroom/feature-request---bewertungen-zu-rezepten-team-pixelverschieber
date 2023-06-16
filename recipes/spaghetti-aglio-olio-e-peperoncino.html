@@ -188,20 +188,30 @@
                 </div>
 
                 <label for="message">Nachricht</label>
-                <textarea id="message" name="message" placeholder="Nachricht" value="">
-                </textarea>
+                <textarea id="message" name="message" placeholder="Tolles Rezept!"></textarea>
 
                 <label for="data">
                     <input type="checkbox" id="data" name="data">
                     Datenschutzerklärung</label>
 
                 <div class="form-container">
-                    <button type="submit">Senden</button>
-
                     <button type="reset">Zurücksetzen</button>
+                    
+                    <button id="comment-submit-btn" type="submit">Senden</button>
                 </div>
             </form>
         </article>
+
+        <section class="comments">
+            <h3>Kommentare</h3>
+            <div class="comment">
+                <div class="comment-user-info">
+                    <img src="../images/user.png" alt="Logo">
+                    <p>Username</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil quibusdam neque temporibus perferendis repudiandae ex expedita, eaque quasi. Neque, corrupti enim. Repellendus labore excepturi provident placeat praesentium esse nulla.</p>
+            </div>
+        </section>
     </main>
 
     <script src="/scripts/form-validation.js"></script>
