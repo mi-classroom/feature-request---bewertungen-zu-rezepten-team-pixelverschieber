@@ -24,7 +24,7 @@ h2 {
     margin-bottom: var(--l);
     font-size: var(--font-size-heading2);
     font-weight: var(--font-weight-bold);
-    line-height: var(--lh-heading);
+    line-height: var(--lh-normal);
 }
 
 h3{
@@ -65,18 +65,12 @@ ol {
     padding: 0 0 0 var(--spacing-margin-medium);
 }
 
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-main > article:not([class]),
+main > article:not(.hero),
 main > div,
-main > section:not([class]) {
+main > section:not(.hero){
     max-width: var(--max-width-content);
     padding: var(--l);
+    margin: auto;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */

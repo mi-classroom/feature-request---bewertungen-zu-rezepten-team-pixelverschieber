@@ -118,10 +118,6 @@
 /* Ingredients
 ############################################################################ */
 
-.ingredients {
-
-}
-
 .ingredients table {
     width: 100%;
     border: 1px solid var(--accent);
@@ -148,6 +144,7 @@
 ############################################################################ */
 
 .nutritional-values{
+    width: 100%;
     text-align: center;
 }
 
@@ -351,4 +348,66 @@ form input[type="checkbox"] {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+/* Steps
+############################################################################ */
+
+.steps{
+    padding: 0;
+    counter-reset: step-count;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.steps > li{
+    display: block;
+    padding-bottom: var(--xl);
+    counter-increment: step-count;
+}
+
+
+.steps > li.is-text-only{
+    display: flex;
+    justify-content: center;
+}
+
+.steps > li.is-text-only p{
+    max-width: calc(var(--max-content-width) * 0.5);
+}
+
+.steps > li figure{
+    display: flex;
+    width: auto;
+    align-items: center;
+    margin: 0;
+    gap: var(--m);
+}
+
+.steps > li figure > *{
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.steps .is-reversed{
+    flex-direction: row-reverse;
+}
+
+.steps .has-counter{
+    position: relative;
+    padding-top: 0;
+    margin-left: var(--xl);
+}
+
+.steps .has-counter::before {
+    position: absolute;
+    left: calc(var(--xl) * -1);
+    color: var(--accent);
+    content: counter(step-count);
+    font-size: var(--xl);
+    font-weight: bold;
+    line-height: var(--xl);
+}
+
+.steps > li.is-text-only p{
+    max-width: calc(var(--max-width-content) * 0.5);
 }
