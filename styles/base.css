@@ -24,6 +24,15 @@ h2 {
     margin-bottom: var(--l);
     font-size: var(--font-size-heading2);
     font-weight: var(--font-weight-bold);
+    line-height: var(--lh-heading);
+}
+
+h3{
+    line-height: var(--lh-heading);
+}
+
+h2 + h3{
+    margin-top: calc(var(--m) * -1);
 }
 
 hr {
