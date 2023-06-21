@@ -1,0 +1,111 @@
+
+html,
+body {
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-base);
+}
+
+nav a {
+    color: var(--primary);
+}
+
+
+h1 {
+    max-width: var(--max-width-content);
+    color: var(--accent);
+    font-family: var(--font-family-serif);
+    font-size: var(--font-size-heading1);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--lh-heading);
+    text-wrap: balance;
+}
+
+h2 {
+    margin-bottom: var(--l);
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-bold);
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #d9d9d9;
+    margin: var(--spacing-margin-large) 0;
+}
+
+p {
+    margin: var(--spacing-margin-medium) 0 0;
+    color: var(--primary-lighter);
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+}
+
+figure {
+    margin: var(--figure-margin-top) 0 0;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    margin: var(--spacing-margin-medium) 0 0;
+}
+
+ol {
+    padding: 0 0 0 var(--spacing-margin-medium);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > article:not([class]),
+main > div,
+main > section:not([class]) {
+    max-width: var(--max-width-content);
+    padding: var(--l);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+article {
+    margin: 0 0 var(--article-margin-bottom);
+}
+
+article a {
+    display: inline-block;
+    margin: var(--spacing-margin-medium) 0 0;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+article:not([class]) h2,
+section h2 {
+    color: var(--accent);
+    font-family: var(--font-family-serif);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+article:not([class]) h3,
+section:not([class]) h3 {
+    font-family: var(--font-family-serif);
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+}
+
+article:not([class]) figure,
+section:not([class]) figure {
+    width: 80%;
+    margin-left: 10%;
+}
+
+article:not([class]) hr,
+section:not([class]) hr {
+    width: 50%;
+    border-top: 2px solid var(--accent-lighter);
+    margin-left: 25%;
+}

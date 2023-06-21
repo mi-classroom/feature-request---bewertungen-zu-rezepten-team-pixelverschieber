@@ -8,17 +8,19 @@
   <title>Übersicht</title>
 
   <link rel="stylesheet" href="/styles/reset.css">
-  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/variables.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/components.css">
   <link rel="stylesheet" href="/styles/index.css">
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar">
+  <header class="navbar">
+    <nav>
       <ul>
         <li><a href="/recipes/spaghetti-aglio-olio-e-peperoncino.html">Rezepte</a></li>
-        <li><a href="/index.html">Menüs</a></li>
+        <li><a class="is-active" href="/index.html">Menüs</a></li>
         <li><a href="#">Community</a></li>
         <li><a href="#">Videos</a></li>
         <li><a href="#">Mein Kochbuch</a></li>
@@ -58,29 +60,33 @@
       </p>
 
       <p>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="48"><path d="M480-322 216-586l67-67 197 198 197-197 67 67-264 263Z"/></svg>
+        <a href="#antipasti">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="48">
+          <path d="M480-322 216-586l67-67 197 198 197-197 67 67-264 263Z" />
+        </svg>
+        </a>
       </p>
     </article>
 
-    <article class="hero">
+    <section class="hero">
       <figure>
         <img src="images/header.jpg" alt="Bild von Spaghetti">
         <figcaption>(Foto: CK_Print-Magazin / Thomas Neckermann)</figcaption>
       </figure>
 
-      <h2>Ideen für ein italienisches Menü</h2>
+      <div class="hero-content">
+        <h2>Ideen für ein italienisches Menü</h2>
+        <p>
+          Wenn ihr etwas Hilfe beim Zusammenstellen eines typisch italienischen
+          Menüs braucht, könnt ihr euch von unseren Vorschlägen für die
+          unterschiedlichen Gänge inspirieren lassen.
+          <a href="#">Zum Rezept: Spaghetti aglio, olio e peperoncino</a>
+        </p>
+      </div>
 
-      <p>
-        Wenn ihr etwas Hilfe beim Zusammenstellen eines typisch italienischen
-        Menüs braucht, könnt ihr euch von unseren Vorschlägen für die
-        unterschiedlichen Gänge inspirieren lassen.
-      </p>
+    </section>
 
-      <a href="#">Zum Rezept: Spaghetti aglio, olio e peperoncino</a>
-
-    </article>
-
-    <article>
+    <section id="antipasti">
       <h2>Vorspeise</h2>
       <h3>Antipasti</h3>
 
@@ -104,9 +110,9 @@
       </figure>
 
       <hr>
-    </article>
+    </section>
 
-    <article>
+    <section>
       <h2>1. Hauptgang</h2>
       <h3>Pasta</h3>
 
@@ -135,9 +141,9 @@
         <img src="images/tagliatelle-mit-zitronen-basilikum-sauce.jpg" alt="Bild von Tagliatelle">
         <figcaption>Tagliatelle mit Zitronen-Basilikum-Sauce (Foto: Fabio Haebel)</figcaption>
       </figure>
-    </article>
+    </section>
 
-    <article>
+    <section>
       <h2>2. Hauptgang</h2>
       <h3>Fleisch- und Fischgerichte</h3>
 
@@ -152,11 +158,9 @@
       </p>
 
       <hr>
-    </article>
+    </section>
 
-    <hr>
-
-    <article>
+    <section>
       <h2>Dessert</h2>
       <h3>Tiramisù, Panna cotta und Co.</h3>
 
@@ -172,11 +176,9 @@
       </p>
 
       <hr>
-    </article>
+    </section>
 
-    <hr>
-
-    <article>
+    <section>
       <h3>Digestifs für ein italienisches Menü</h3>
 
       <p>
@@ -195,7 +197,7 @@
         Zimmertemperatur getrunken und passt auch hervorragend zum Espresso
         oder Kaffee.
       </p>
-    </article>
+    </section>
   </main>
 </body>
 
