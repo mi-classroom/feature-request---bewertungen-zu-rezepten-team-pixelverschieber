@@ -85,8 +85,9 @@ article a {
     text-decoration: none;
 }
 
-article:not([class]) h2,
-section h2 {
+section h2,
+article:not([class]) h2
+ {
     color: var(--accent);
     font-family: var(--font-family-serif);
     font-size: 1.3rem;
