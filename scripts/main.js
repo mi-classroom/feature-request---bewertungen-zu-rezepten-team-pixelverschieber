@@ -40,7 +40,7 @@ const observer = new IntersectionObserver(
 );
 
 // Select all sections with 'id' attribute
-const sections = document.querySelectorAll("article[id]");
+const sections = document.querySelectorAll("main > *");
 
 // Observe each section for intersection
 sections.forEach((section) => {
